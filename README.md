@@ -1,6 +1,4 @@
 # Algorithms_FisherYatesShuffle
-This program read in a Text file that contains the numbers 1-20.
-The file data is then read in using Stream Reader.
-File data is added to a list.
-The list is then sent into the Randomize method that leverages the Fisher-Yates Shuffle.
-The Fisher Yates shuffle's goal is for every iteration to be equally likely random.
+ - This program has been refactored to leverage separation of concern, DRY, and single responsibility. The refactoring began with creating classes to package together values and behaviors that dealt with each other. The
+first class being Randomize. This class contains the File data list that contains the contents to the file we're reading in, the initialization of the utility class, and the two methods. The first method is the Fisher Method which takes in the File data and scrambles it according to the fisher yates method. This method iterates through the given data set and rearranges the data set. It does this by going through the list of data and swapping each
+each element with another element that has yet to be shuffled. This method of randomization gives each element an equal probability of being in any position in the data set. The list that has entered this method is then ran through the next method which prints it's shuffled contents to the console. These two methods are called in the main program and executed.
